@@ -1,14 +1,14 @@
 <?php 
-require 'includes/header.php'
+require 'includes/header.php';
 ?>
 
 <main>
          <?php
         if(isset($_SESSION['username'])){
-            include'html/profile.html';
+            include 'html/profile.html';
         }
         else{
-            header("Location: login.php");
+            header("Location: ../login.php");
             exit();
         }
         ?>

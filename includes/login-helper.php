@@ -8,7 +8,7 @@ if(empty($uname_email)|| empty($passw)){
 header("location ../login.php?error=EmptyField");
 exit();
 }
-$sql = "SELECT' * FROM users WHERE uname=? or email=?;";
+$sql = "SELECT * FROM users WHERE uname=? or email=?;";
 $stmt =mysqli_stmt_init($conn);
 if (!mysqli_stmt_prepare($stmt, $sql)) {
     header("Location: ../login.php?error=SQLInjection");

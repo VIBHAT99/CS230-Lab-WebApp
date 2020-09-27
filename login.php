@@ -35,7 +35,7 @@ require 'includes/header.php'
     </div>
     <div class="h-35 center-me">
       <div class="my-auto">
-        <form action="form-signin" action="includes/login-helper.php" method="post" style="background:rgb(51, 42, 51)">
+        <form class="form-signin" action="includes/login-helper.php" method="post" style="background:rgb(51, 42, 51)">
           <h1 class="h3 mb-3 font-weight-normal" style="color: tan">Please sign in</h1>
           <label for="inputEmail" class="sr-only">Username or Email address</label>
           <input type="text" id="inputEmail" name="uname" class="form-control" placeholder="Username/ Email" required autofocus>
