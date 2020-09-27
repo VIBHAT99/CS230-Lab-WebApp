@@ -5,7 +5,7 @@ $uname_email = $_POST['uname'];
 $passw = $_POST['pwd'];
 
 if(empty($uname_email)|| empty($passw)){
-header("location ../login.php?error=EmptyField");
+header("Location ../login.php?error=EmptyField");
 exit();
 }
 $sql = "SELECT * FROM users WHERE uname=? or email=?;";
@@ -21,7 +21,7 @@ $result = mysqli_stmt_get_result($stmt);
 $data = mysqli_fetch_assoc($result);
 
 if(empty($data)){
-    header("location ../login.php?error=UserDNE");
+    header("Location ../login.php?error=UserDNE");
     exit();
 
 }
@@ -34,11 +34,11 @@ else {
         $_SESSION['fname'] = $data['fname'];
         $_SESSION['username'] = $data['uname'];
 
-        header("location ../profile.php?login=Success");
+        header("Location ../profile.php?login=Success");
         exit();
     }
     else {
-        header("location ../login.php?error=WrongPass");
+        header("Location ../login.php?error=WrongPass");
         exit();
     }
 }

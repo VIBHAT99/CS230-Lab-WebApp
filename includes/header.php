@@ -30,7 +30,7 @@ session_start()
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <?php
-                if (!isset($_SESSION['username'])) {
+                if (isset($_SESSION['username'])) {
                     echo ' <li class="nav-item">
                     <a class="nav-link" href="login.php">Login</a>
                 </li>';
