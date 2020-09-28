@@ -21,7 +21,7 @@ $result = mysqli_stmt_get_result($stmt);
 $data = mysqli_fetch_assoc($result);
 
 if(empty($data)){
-    header("Location ../login.php?error=UserDNE");
+    header("Location: ../login.php?error=UserDNE");
     exit();
 
 }
@@ -34,11 +34,11 @@ else {
         $_SESSION['fname'] = $data['fname'];
         $_SESSION['username'] = $data['uname'];
 
-        header("Location ../profile.php?login=Success");
+        header("Location: ../profile.php?login=Success");
         exit();
     }
     else {
-        header("Location ../login.php?error=WrongPass");
+        header("Location: ../login.php?error=WrongPass");
         exit();
     }
 }
