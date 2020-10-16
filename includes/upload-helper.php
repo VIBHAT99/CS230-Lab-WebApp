@@ -29,11 +29,7 @@ if ($file_error !==0) {
     header("Location: ../profile.php?error=InvalidType");
     exit();
 }
-if ($file_error !==0) {
-    header("Location: ../profile.php?error=UploadError");
-    exit();
-}
-if ($file_size > 4*MB) {
+if ($file_size > 4 * MB) {
     header("Location: ../profile.php?error=FileSizeExceeded");
     exit();
 }
