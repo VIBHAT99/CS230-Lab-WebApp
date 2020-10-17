@@ -9,14 +9,14 @@ if (isset($_POST['prof-submit'])) {
    
 $uname = $_SESSION['username'];
 
-$file = $_FILES['pro-image'];
+$file = $_FILES['prof-image'];
 $file_name = $file['name'];
 
 $file_tmp_name = $file['tmp_name'];
 $file_error = $file['error'];
 $file_size = $file['size'];
 
-$bio =$_POST['bio'];
+$bio = $_POST['bio'];
 
 $ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
 

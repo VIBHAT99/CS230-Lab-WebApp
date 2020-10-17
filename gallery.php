@@ -5,6 +5,7 @@ require 'includes/header.php';
 <main>
 <link rel="stylesheet" href="css/gallery.css">
     <h1>Gallery</h1>
+    <img src="uploads/anon.png">
     <div class="gallery-container">
         <?php
         include_once 'includes/dbhandler.php';
