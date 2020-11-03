@@ -52,16 +52,17 @@ require 'includes/dbhandler.php';
 
                 }
             }
+            
         </script>
 
-        <div class="h-100 center-me text-center">
+        <div class="h-100 center-me text-center"> 
             <div class="my-auto">
                 <form action="includes/upload-helper.php" method="POST" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <img src="<?php echo $photo; ?>" onclick="triggered();" id="prof-display">
+                    <div class="form-group"> 
+                        <img src="uploads/anon.png" onclick="triggered();" id="prof-display"> 
                         <label for="prof-image" id="uname-style"><?php echo $prof_user;?></label>
-                        <input type="file" name="profile-image" id="profile-image" onchange="preview(this)" class="form-control" style="display: none;">
-                    </div>
+                        <input type="file" name="prof-image" id="prof-image" onchange="preview(this)" class="form-control" style="display: none;">
+                    </div> 
                     <div class="form-group">
                         <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio..." style="text-align: center;"></textarea>
                     </div>
@@ -76,7 +77,7 @@ require 'includes/dbhandler.php';
 
     <?php
     } else {
-        header("Location: login.php");
+        header("Location: login.php"); 
         exit();
     }
     ?>

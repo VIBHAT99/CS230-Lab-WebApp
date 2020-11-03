@@ -18,7 +18,7 @@ require 'includes/dbhandler.php';
                         <input type="text" name="title" id="title" class="form-control" placeholder="title" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="descript" id="descript" cols="30" rows="3" placeholder="Description" style="text-align:center;"></textarea>
+                        <textarea name="descript" id="descript" cols="30" rows="3" placeholder="Description" style="text-align: center;"></textarea>
                     </div>
                     <div class="form-group">
                         <button type="submit" name="gallery-submit" class="btn btn-outline-success btn-lg btn-block">upload</button>
