@@ -2,7 +2,7 @@
 require'includes/header.php'
 ?>
 <main>
-<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/index.css">
     <div class="about">
         <h1>SethSpark Industries</h1>
         <p>(304) 594-6892 | vs0015@mix.wvu.edu</p>
